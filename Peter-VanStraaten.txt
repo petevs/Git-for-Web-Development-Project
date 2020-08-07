@@ -1,0 +1,361 @@
+    
+    Link to completed codepen:
+
+        https://codepen.io/petevs/pen/rNeajyZ
+
+
+    1. What is Semantic HTML?
+
+        Semantic HTML aims to make HTML more meaningful and understandable by using tags that better describe the code. 
+        For example, instead of just having a <div> we could use a <section> tag to better describe a new section.
+
+    2. What is HTML used for? 
+
+        HTML is a markup language that is used to tell the browser how to display data on the page.
+
+    3. What is an attribute and where do we put it?
+
+        An attribute is used to supply data to an HTML element that will not be displayed on the page.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+        The h1 tag is used to present the most important heading and overall purpose of the page. It should only be used once.
+
+    5. Name two tags that have required attributes
+
+        The <img> tage will always have a 'src' attribute and the <a> tag will always have an 'href' attribute.
+
+            <img src="link-to-image" alt="">
+            <a href="link">click here</a>
+
+    6. What do we put in the head of our HTML document?
+
+        The <title>Title of the document</title>, links to stylesheets 
+        <link rel="stylesheet" type="text/css" href="styleSheetName.css">.
+
+    7. What is an id?
+
+        An id is added to an element so that we can select the element more easily and accurately with CSS.
+
+    8. What elements can I add an id to? 
+
+        An id can be used on any html element.
+
+    9. How many times can I use the same id on a page?
+
+        An id should only be used once to mark a specific element.
+
+    10. What is a class?
+
+        A class is similiar to an id and is added to elements so that we can select them more easily and accurately with CSS.
+        However, unlike ids that should only appear on one element, a class can be used on multiple elements.
+
+    11. What elements can I add a class to?
+
+        A class can be used on any html element.
+
+    12. How many times can I use the same class on a page?
+
+        You can use the same class multiple times on the same page.
+
+    13. How do I get my link to open in a new tab?
+
+        Add a target="_blank" attribute to the <a> tag.
+        <a href="linkAddress" target="_blank">Click Here</a>
+
+    14. What is the alt attribute in the image tag used for? 
+
+        The alt tag is an attribute that adds text to an image, in case the image is unable to be displayed.
+        The alt tag is also used by screen readers for the visually impaired. The screen reader will read the alt text
+        instead of displaying the image. 
+        Alt tags are also useful for SEO and help index images properly.
+
+    15. How do I reference an id?
+
+        Use the # to reference an id in CSS. For example, if <div id="contact-box"></div>
+    
+        #contact-box {
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+    16. What is the difference between a section and a div
+
+        A <section> is a semantic tag that marks a section in the document and a group of content.
+        A <div> does not have any semantic meaning and does not mark a section in the document.
+
+    17. What is CSS used for?
+
+        CSS is used for styling the presentation of HTML.
+
+    18. How to we select an element? Example - every h2 on the page
+
+        To select an element we type the element tag followed by {}. For example, to select every h2:
+
+        h2 {
+            font-size: 24px;
+        }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    
+    A class is used on multiple elements, while an id is used to select one specific element.
+    Elements are selected using #id-name vs classes are selected using .class-name. For example,
+
+        #unique-id-name {
+            box-shadow: 0px 2px 4px 0px rgba(0,0,0,.15)
+        }
+
+        .class-name {
+            color: #006AFF;
+        }
+    
+    20. How do we select classes in CSS?
+
+        Classes are selected by using the . + class name + {}.
+        For example,
+
+        .class-name {
+            font-family: raleway;
+        }
+
+    21. How do we select a p element with a single class of “human””?
+
+        p.human {
+            font-size: 18px;
+        }
+
+        or
+
+        .human {
+            font-size: 18px;
+        }
+
+    22. What is a parent child selector? When would this be useful? 
+
+        The parent child selector selects all the elements that are a child of a specific parent element.
+        This can be useful to apply styling to all the child elements of a parent without having to style each directly.
+
+        Example of selecting all the spans inside divs:
+
+            div span {
+                color: red;
+            }
+
+    23. How do you select all links within a div with the class of sidebar?
+
+        div.sidebar a {
+            font-size: 18px;
+        }
+
+    24. What is a pseudo selector?
+
+        A pseudo selector is used to select an element in a specific state. For example,
+
+        a:hover {
+            color: red;
+        }
+
+        They can also be used to select a specific instance of an element. For example, we can select
+        the first-of-type, first-child, nth-of-type(n).
+
+        Example of making every even div have a different background color:
+
+            div:nth-of-type(even){
+                background-color: #cccccc;
+            }
+
+    25. What do we use the change the spacing between lines?
+
+        Change the line height:
+
+            p {
+                line-height: 2em;
+            }
+
+
+    26. What do we use to change the spacing between letters?
+
+        Change the letter-spacing:
+
+            p {
+                letter-spacing: 1px; 
+            }
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+        Change the text-transform to uppercase, lowercase, and capitalize.
+
+        p {
+            text-transform: uppercase;
+        }
+
+        p {
+            text-transform: lowercase;
+        }
+
+        p {
+            text-transform: capitalize;
+        }
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+        div {
+            border: 1px dotted black;
+        }
+
+    29. How do I select everything on the page?
+
+        * {
+            color: red;
+        }
+
+    30. How do I write a comment in CSS?
+
+        /* this is how you write a comment */
+
+
+    31. How do I find out what file I am in, when I am using the command line?
+
+        pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+
+        ls
+    
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+        rm filename
+
+    34. Why should I use version control?
+
+        You should use version control because then you can track all of your teams work, 
+        see all the changes that are being made, you don't risk saving over anyones changes,
+        you don't risk losing work, you can easily revert back to older versions of your work.
+        In a nutshell, you don't risk losing progress.
+
+    35. How often should I commit to github?
+
+        You should commit to github often.
+
+    36. What is the command we would use to push our repo up to github? 
+
+        git push -u origin branchname
+
+    37. Walk me through Lambda's git flow. 
+
+        Step 1: Create a fork of the repo and verify 
+            - Click on the fork button
+            - Verify your name is now in front of rep name
+
+        Step 2: Add collaborators
+            - Click on the settings button
+            - Click on manage access on left side panel (2nd option)
+            - Click on green 'Invite a collaborator' button
+            - Add colloaborator
+
+        Step 3: Clone Repo
+            - Go back to main project folder
+            - Click green 'Code' button
+            - Copy the URL
+            - Open terminal
+            - use the **cd** command to get into the directory that you want the cloned fork to be
+            - Use **git clone URLthatwascopied***
+        
+        Step 4: cd into repo
+            - **cd into the new repo folder***
+
+        Step 5: Create repo branch
+            - **git checkout -b 'firstname-lastname'**
+            - Verify that the branch name has now changed from (master) to (firstname-lastname)
+
+        Step 6: open files and make changes
+
+        Step 7: Check status
+            - **git status***
+
+        Step 8: Add Changes
+            - **git add .*
+        
+        Step 9: Commit changes
+            - **git commit -m "comment about your commit that will be a helpful reference"**
+        
+        Step 10: Push changes to Github Repo
+            - **git push -u origin branch-name**
+
+        Step 11: Submit pull request
+            - Go to forked project on github
+            - Click on the "Branch: master" dropdown button
+            - Select your name-branch
+            - Click on the 'Pull Request' Link (it is directly below the 'Add file' button)
+            - In the redirect 'Open a pull request' page, click on the 'base repository: LambdaSchool/Git-for-Web-" dropdown button
+            - Select your forked repo
+
+        Step 12: Add your TL to reviewers
+            - click on gear icon beside reviewers on right side
+            - add TL
+
+        Step 13: Do Not Merge Pull Request
+            - Do not merge pull request your TL will do it after they've done a review
+
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+
+        An inline element displays as the width of the element, while a block element starts on a new line
+        and takes up the full width.
+
+
+    2. What happens when an element is positioned absolutely?
+
+        An element that is positioned absolutely is removed from the normal flow of the document. The other elements
+        of the page will act as if the element that is position absolutely is not there and the element that is positioned
+        absolutely will now reference its position from the document instead of the parent.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+
+        display: inline-block will display inline but will also give a width, height to the element.
+
+        h2 {
+            border: 1px dotted black;
+            padding: 10px;
+            display: inline-block;
+            width: 100px;
+        }
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+   
+        Block by default:
+            - <p>
+            - <h1>
+            - <div>
+
+        Inline by default:
+        
+            - <img>
+            - <a>
+   
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+
+        Box model can be thought of as a way to think about laying out html elements with css.
+        Think of each html wrapped in a box. There is a border that goes around the outside of the box 
+        and the content goes inside the box. The space between the border and the content is referred to as the padding.
+        The space betweent the border and the next html element is referred to as the margin. Using css
+        we can control the layout, spacing and styling of html by using these changing the values.
+
+        The issue with box model is that by default CSS applies padding and borders on top of elements.
+        Therefore, if you want to set a width and height for the box you need to do math to factor in padding and border.
+
+        The fix is using box-sizing: border-box. This factors in the padding and border into the width of the box so we
+        don't need to do the math.
+
+       We can do this by add the following to our css:
+
+            *, *:before, *:after {
+                box-sizing: border-box;
+                -webkit-box-sizing; border-box;
+                -moz-box-sizing: border-box;
+            }
+    
